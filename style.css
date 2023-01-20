@@ -44,7 +44,7 @@
   height: 500px;
   width: 100%;
   position: absolute;
-  animation: night 30s infinite alternate;
+  animation: night 12s infinite alternate;
 }
 .cloud {
   background: rgba(255, 255, 255);
@@ -114,7 +114,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  animation: 12s am infinite alternate;
   animation: 12s pm infinite alternate;
 }
 .road {
@@ -213,36 +212,28 @@
     top: 0;
     left: 0;
   }
+  20% {
+    top: 125px;
+    left: 12.5%;
+  }
+  50% {
+    top: 250px;
+    left: 25%;
+  }
   100% {
     top: 500px;
     left: 50%;
   }
 }
 
-@keyframes am {
-  0% {
-    top: 500px;
-    left: 50%;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
 @keyframes night {
   0% {
     background-color: lightblue;
   }
-  20% {
-    background-color: skyblue;
-  }
   50% {
-    background-color: blue;
-  }
-  80% {
     background-color: skyblue;
   }
   100% {
-    background-color: lightblue;
+    background-color: blue;
   }
 }
